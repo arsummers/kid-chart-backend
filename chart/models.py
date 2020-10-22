@@ -1,11 +1,17 @@
 from django.db import models
-from django.forms import ModelForm
+
+# Create your models here.
+from django.db import models
+# from django.forms import ModelForm
 from django.urls import reverse
-from django.views.generic.base import HttpResponseRedirect
+# from django.views.generic.base import HttpResponseRedirect
 from django.contrib.auth.models import User
 import uuid
 
+
 # Create your models here.
+
+
 class Rule(models.Model):
     """
     Model representing a base class for rules. Weight field is how much you want the rule to be worth. The same rule can be applied to multiple kids, and a single kid can be assigned multiple rules.
